@@ -3,39 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public enum BoxType
-{
-	HitBox,
-	HurtBox
-}
-
-public class Box
-{
-	public BoxType type;
-	public Rect dimension;
-
-	public bool IsClicked()
-	{
-		Event e = Event.current;
-		if (e.type == EventType.MouseDown && e.button == 0)
-		{
-			Vector2 mousePos = e.mousePosition;
-
-			return mousePos.x < dimension.x + dimension.width && mousePos.x > dimension.x
-				&& mousePos.y < dimension.y + dimension.height && mousePos.y > dimension.y;
-		}
-
-		return false;
-	}
-}
 
 public class Tool : EditorWindow
 {
 	Texture2D tex;
 	Texture2D texCustomAlpha;
 
+	Event curEvent;
 	Box hitbox = new Box();
-	Box selection;
+	Selection selection = new Selection();
 
 	Color hitBoxColor;
 
@@ -57,10 +33,18 @@ public class Tool : EditorWindow
 	}
 
 	void Update()
-    { }
+    {
+		// selection operations
+		selection.Update(curEvent);
+	}
 
 	private void OnGUI()
 	{
+		// event update
+		curEvent = Event.current;
+
+		// ----------------------------------------
+		// texture selection
 		bool texWasNull = !tex;
 
 		// Texture 2D field
@@ -79,16 +63,31 @@ public class Tool : EditorWindow
 			texCustomAlpha.SetAlphaToColor(Color.cyan);
 		}
 
-		if (texCustomAlpha)
+		// ----------------------------------------
+		// update selection
+
+		if (hitbox.IsClicked(0, curEvent))
 		{
-			EditorGUI.DrawPreviewTexture(new Rect(100, 100, 300, 300), texCustomAlpha);
-			EditorGUI.DrawRect(new Rect(138, 100, 130, 100), hitBoxColor);
+			selection.Select(hitbox);
+			selection.Display();
 		}
 
-		if (hitbox.IsClicked() && selection != hitbox)
+		// ----------------------------------------
+		// display
+
+		// sprite open in tool
+		if (texCustomAlpha)
 		{
-			selection = hitbox;
+			// draw sprite 
+			EditorGUI.DrawPreviewTexture(new Rect(100, 100, 300, 300), texCustomAlpha);
+
+			// draw hitboxes
+			hitbox.Display();
+
+			// draw selection
+			if (selection.selectedBox != null)		selection.Display();
 		}
+
 	}
 
 	public void CopyTexture2D(ref Texture2D dest, Texture2D src)
@@ -102,24 +101,5 @@ public class Tool : EditorWindow
 
 		dest.SetPixels(src.GetPixels());
 		dest.Apply();
-	}
-}
-
-static class ExtensionMethod
-{
-	public static void SetAlphaToColor(this Texture2D texture, Color _color)
-	{
-		for (int i = 0; i < texture.width; i++)
-		{
-			for (int j = 0; j < texture.height; j++)
-			{
-				if (texture.GetPixel(i, j).a < 0.85f)
-				{
-					texture.SetPixel(i, j, _color);
-				}
-			}
-		}
-
-		texture.Apply();
 	}
 }
