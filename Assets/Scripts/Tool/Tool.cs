@@ -19,7 +19,7 @@ public class Tool : EditorWindow
 	static void Init()
 	{
 		var window = GetWindow<Tool>("Baba Tool", true);
-		window.position = new Rect(200, 200, 500, 500);
+		window.position = new Rect(100, 100, 500, 500);
 		window.Show();
 	}
 
@@ -29,13 +29,28 @@ public class Tool : EditorWindow
 		hitBoxColor.a = 0.6f;
 
 		hitbox.type = BoxType.HitBox;
-		hitbox.dimension = new Rect(138, 100, 130, 100);
+		hitbox.dimension = new Rect(100, 100, 130, 100);
 	}
 
 	void Update()
     {
 		// selection operations
 		selection.Update(curEvent);
+
+		if (selection.selectedBox == null)
+		{
+			if (hitbox.IsClicked(0, curEvent))
+			{
+				selection.Select(hitbox);
+			}
+		}
+		else
+		{
+			if (curEvent.type == EventType.MouseDown && !selection.IsReceivingEvent())
+			{
+				selection.Unselect();
+			}
+		}
 	}
 
 	private void OnGUI()
@@ -46,7 +61,7 @@ public class Tool : EditorWindow
 		// ----------------------------------------
 		// texture selection
 		bool texWasNull = !tex;
-
+ 
 		// Texture 2D field
 		GUI.Label(new Rect(50, 5, 50, 16), "texture : ");
 		tex = (Texture2D)EditorGUI.ObjectField(
@@ -66,12 +81,6 @@ public class Tool : EditorWindow
 		// ----------------------------------------
 		// update selection
 
-		if (hitbox.IsClicked(0, curEvent))
-		{
-			selection.Select(hitbox);
-			selection.Display();
-		}
-
 		// ----------------------------------------
 		// display
 
@@ -88,6 +97,7 @@ public class Tool : EditorWindow
 			if (selection.selectedBox != null)		selection.Display();
 		}
 
+		Repaint();
 	}
 
 	public void CopyTexture2D(ref Texture2D dest, Texture2D src)

@@ -32,6 +32,10 @@ public class Box
 	{
 		dimension.Set(_x, _y, dimension.width, dimension.height);
 	}
+	public void SetPosition(Vector2 _newPos)
+	{
+		SetPosition(_newPos.x, _newPos.y);
+	}
 
 	public void Display()
 	{

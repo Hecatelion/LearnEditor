@@ -23,13 +23,11 @@ static class ExtensionMethod
 
 	private static bool IsReceivingEvent(this Rect rect, EventType _eventType, int _mouseButton, Event _curEvent)
 	{
-
 		if (_curEvent != null && _curEvent.type == _eventType && _curEvent.button == _mouseButton)
 		{
-			Vector2 mousePos = _curEvent.mousePosition;
+			Vector2 mousePos = _curEvent.mousePositionDrawableArea();
 
-			return mousePos.x < rect.x + rect.width && mousePos.x > rect.x
-				&& mousePos.y < rect.y + rect.height && mousePos.y > rect.y;
+			return rect.Contains(mousePos);
 		}
 
 		return false;
@@ -43,5 +41,10 @@ static class ExtensionMethod
 	public static bool IsClicked(this Rect rect, int _mouseButton, Event _curEvent)
 	{
 		return rect.IsReceivingEvent(EventType.MouseDown, _mouseButton, _curEvent);
+	}
+
+	public static Vector2 mousePositionDrawableArea(this Event _event)
+	{
+		return new Vector2(_event.mousePosition.x, _event.mousePosition.y - 22); // window top bar height = 22
 	}
 }
