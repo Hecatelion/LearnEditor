@@ -16,7 +16,8 @@ public enum BarType
 	top,
 	bot,
 	left,
-	right
+	right,
+	center
 }
 
 public class Selection
@@ -32,20 +33,23 @@ public class Selection
 
 	// selection outline
 	const float thickness = 5.0f;
-	Rect[] bars = new Rect[4];
+	Rect[] bars = new Rect[5];
 	Vector2 initialSidePos;
+	Rect initialBoxDimentions;
 	BarType selectedSide = BarType.none;
-	bool isResizing = false;
 
 	// selected box
 	public Box selectedBox;
 	Vector2 holdOffset; 
-	bool isMoving = false;
 
 
 	public Selection()
 	{
-		bars[(int)BarType.top].height = bars[(int)BarType.bot].height = bars[(int)BarType.left].width = bars[(int)BarType.right].width = thickness;
+		bars[(int)BarType.top].height = thickness;
+		bars[(int)BarType.bot].height = thickness;
+		bars[(int)BarType.left].width = thickness;
+		bars[(int)BarType.right].width = thickness;
+		bars[(int)BarType.center].width = bars[(int)BarType.center].height = 5 * thickness;
 	}
 
 	// must be called in Tool's update or gui 
@@ -53,13 +57,12 @@ public class Selection
 	{
 		if (selectedBox != null)
 		{
-			mode = Mode.None;
-
 			// moving box mode
-			if (selectedBox.IsClicked(0, _curEvent)) // add center rect as moving tool, such as bars, no selectBox.IsClicked anymore
+			if (bars[(int)BarType.center].IsClicked(0, _curEvent)) // add center rect as moving tool, such as bars, no selectBox.IsClicked anymore
 			{
 				holdOffset = _curEvent.mousePositionDrawableArea() - selectedBox.dimension.position;
 
+				selectedSide = BarType.center;
 				mode = Mode.Moving;
 			}
 			// resizing box mode
@@ -70,19 +73,22 @@ public class Selection
 					if (bars[i].IsClicked(0, _curEvent))
 					{
 						initialSidePos = _curEvent.mousePositionDrawableArea();
+						initialBoxDimentions = selectedBox.dimension;
 
 						selectedSide = (BarType)i;
 						mode = Mode.Resizing;
 					}
 				} 
 			}
+
 			// no mode
 			if(_curEvent.type == EventType.MouseUp && _curEvent.button == 0)
 			{
 				mode = Mode.None;
+				selectedSide = BarType.none;
 			}
 
-			// mode actions
+			// mode updates
 			switch (mode)
 			{
 				case Mode.Moving:		MoveSelection(_curEvent);		break;
@@ -95,7 +101,7 @@ public class Selection
 	{
 		if (selectedBox != null)
 		{
-			for (int i = 0; i < 4; i++)
+			for (int i = 0; i < 5; i++)
 			{
 				EditorGUI.DrawRect(bars[i], (selectedSide == (BarType)i) ? Color.red : Color.yellow);
 			}
@@ -104,7 +110,7 @@ public class Selection
 
 	public bool IsReceivingEvent()
 	{
-		return isMoving || isResizing;
+		return mode != Mode.None;
 	}
 
 	public void Select(Box _selectedBox)
@@ -131,14 +137,16 @@ public class Selection
 		
 		bars[(int)BarType.top].y = bars[(int)BarType.left].y = bars[(int)BarType.right].y = selectedBox.dimension.y - thickness;
 		bars[(int)BarType.bot].y = selectedBox.dimension.y + selectedBox.dimension.height;
+
+		bars[(int)BarType.center].position = selectedBox.dimension.position + selectedBox.dimension.size / 2 - bars[(int)BarType.center].size / 2;
 	}
 
 	private void MoveSelection(Event _curEvent)
 	{
 		if (_curEvent.button == 0)
 		{
-			selectedBox.SetPosition(_curEvent.mousePositionDrawableArea() - holdOffset);
-			
+			selectedBox.SetPosition(_curEvent.mousePositionDrawableArea() - selectedBox.dimension.size / 2);
+
 			UpdateGraphics();
 		}
 	}
@@ -146,22 +154,25 @@ public class Selection
 	private void ResizeSelection(Event _curEvent)
 	{
 		Vector2 movement = _curEvent.mousePositionDrawableArea() - initialSidePos;
-		Debug.Log("movement : " + movement.y);
 
 		switch (selectedSide)
 		{
 			case BarType.top:
-				selectedBox.dimension.height -= movement.y;
-				selectedBox.dimension.y = _curEvent.mousePositionDrawableArea().y;
+				selectedBox.dimension.height = initialBoxDimentions.height - movement.y;
+				selectedBox.dimension.position = initialBoxDimentions.position + new Vector2(0, movement.y);
 				break;
 
 			case BarType.bot:
+				selectedBox.dimension.height = initialBoxDimentions.height + movement.y;
 				break;
 
 			case BarType.left:
+				selectedBox.dimension.width = initialBoxDimentions.width - movement.x;
+				selectedBox.dimension.position = initialBoxDimentions.position + new Vector2(movement.x, 0);
 				break;
 
 			case BarType.right:
+				selectedBox.dimension.width = initialBoxDimentions.width + movement.x;
 				break;
 
 			default:

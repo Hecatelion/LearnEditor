@@ -10,8 +10,9 @@ public class Tool : EditorWindow
 	Texture2D texCustomAlpha;
 
 	Event curEvent;
-	Box hitbox = new Box();
+	List<Box> hitboxes = new List<Box>();
 	Selection selection = new Selection();
+	bool hasSelectedABoxThisFrame;
 
 	Color hitBoxColor;
 
@@ -28,8 +29,6 @@ public class Tool : EditorWindow
 		hitBoxColor = Color.red;
 		hitBoxColor.a = 0.6f;
 
-		hitbox.type = BoxType.HitBox;
-		hitbox.dimension = new Rect(100, 100, 130, 100);
 	}
 
 	void Update()
@@ -37,19 +36,28 @@ public class Tool : EditorWindow
 		// selection operations
 		selection.Update(curEvent);
 
-		if (selection.selectedBox == null)
+		hasSelectedABoxThisFrame = false;
+
+		// if ((selection.selectedBox == null || selection.selectedBox.IsClicked(0, curEvent))) // should not try to select other box if the selected one is clicked
 		{
-			if (hitbox.IsClicked(0, curEvent))
+			foreach (var hitbox in hitboxes)
 			{
-				selection.Select(hitbox);
+				if (hitbox.IsClicked(0, curEvent))
+				{
+					selection.Select(hitbox);
+
+					hasSelectedABoxThisFrame = true;
+
+					// dont check all other boxes if one is clicked
+					break;
+				}
 			}
 		}
-		else
+
+		if (!hasSelectedABoxThisFrame && selection.selectedBox != null &&
+			curEvent.type == EventType.MouseDown && !selection.IsReceivingEvent())
 		{
-			if (curEvent.type == EventType.MouseDown && !selection.IsReceivingEvent())
-			{
-				selection.Unselect();
-			}
+			selection.Unselect();
 		}
 	}
 
@@ -79,7 +87,19 @@ public class Tool : EditorWindow
 		}
 
 		// ----------------------------------------
-		// update selection
+		// add boxes
+		if (GUI.Button(new Rect(40, 110, 50, 50), "ADD"))
+		{
+			AddHitbox();
+		}
+
+		// ----------------------------------------
+		// remove boxes
+		if (GUI.Button(new Rect(40, 180, 50, 50), "REM"))
+		{
+			RemoveHitbox(ref selection.selectedBox);
+			selection.Unselect();
+		}
 
 		// ----------------------------------------
 		// display
@@ -88,16 +108,33 @@ public class Tool : EditorWindow
 		if (texCustomAlpha)
 		{
 			// draw sprite 
-			EditorGUI.DrawPreviewTexture(new Rect(100, 100, 300, 300), texCustomAlpha);
+			EditorGUI.DrawPreviewTexture(new Rect(110, 110, 350, 350), texCustomAlpha);
 
 			// draw hitboxes
-			hitbox.Display();
+			foreach (var box in hitboxes)
+			{
+				box.Display();
+			}
 
 			// draw selection
 			if (selection.selectedBox != null)		selection.Display();
 		}
 
 		Repaint();
+	}
+
+	void AddHitbox()
+	{
+		Box hitbox = new Box();
+		hitbox.type = BoxType.HitBox;
+		hitbox.dimension = new Rect(110, 110, 100, 80);
+
+		hitboxes.Add(hitbox);
+	}
+
+	void RemoveHitbox(ref Box _hitbox)
+	{
+		hitboxes.Remove(_hitbox);
 	}
 
 	public void CopyTexture2D(ref Texture2D dest, Texture2D src)
