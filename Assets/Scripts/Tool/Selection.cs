@@ -58,7 +58,7 @@ public class Selection
 		if (selectedBox != null)
 		{
 			// moving box mode
-			if (bars[(int)BarType.center].IsClicked(0, _curEvent)) // add center rect as moving tool, such as bars, no selectBox.IsClicked anymore
+			if (bars[(int)BarType.center].IsClicked(0, _curEvent))
 			{
 				holdOffset = _curEvent.mousePositionDrawableArea() - selectedBox.dimension.position;
 

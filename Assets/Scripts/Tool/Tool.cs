@@ -38,7 +38,12 @@ public class Tool : EditorWindow
 
 		hasSelectedABoxThisFrame = false;
 
-		// if ((selection.selectedBox == null || selection.selectedBox.IsClicked(0, curEvent))) // should not try to select other box if the selected one is clicked
+		// should not try to select other box if the selected one is clicked
+		if (selection.selectedBox != null && selection.selectedBox.IsClicked(0, curEvent))
+		{
+			hasSelectedABoxThisFrame = true;
+		}
+		else
 		{
 			foreach (var hitbox in hitboxes)
 			{
