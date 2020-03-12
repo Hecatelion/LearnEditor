@@ -13,6 +13,18 @@ MonoBehaviour:
   m_Name: DefaultMove
   m_EditorClassIdentifier: 
   steps:
+  - duration: 10
+    damages: 0
+    hitboxes: []
+    hurtboxes: []
+    grabboxes: []
+    texture: {fileID: 0}
+  - duration: 20
+    damages: 0
+    hitboxes: []
+    hurtboxes: []
+    grabboxes: []
+    texture: {fileID: 0}
   - duration: 0
     damages: 0
     hitboxes: []

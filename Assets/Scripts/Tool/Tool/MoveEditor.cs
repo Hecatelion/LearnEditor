@@ -17,8 +17,8 @@ public class MoveEditor : EditorWindow
 
 	Event curEvent;
 
-	Move curMove;
-	Step curStep;
+	Move curMove = null;
+	Step curStep = null;
 	//MoveType moveType;
 	//int nbStep;
 	List<Box> hitboxes = new List<Box>();
@@ -99,15 +99,17 @@ public class MoveEditor : EditorWindow
 				Texture2D stepTex = curMove.steps[i].texture;
 				if (stepTex)
 				{
-					if (GUI.Button(new Rect(c_stepsButtonsPos, (c_buttonSize + new Vector2(i * c_margin, 0))), stepTex))
+					if (GUI.Button(new Rect(c_stepsButtonsPos + new Vector2(i * (c_margin + c_buttonSize.x), 0), c_buttonSize), stepTex))
 					{
+						tex = null;
 						OpenStep(i);
 					}
 				}
 				else
 				{
-					if (GUI.Button(new Rect(c_stepsButtonsPos, (c_buttonSize + new Vector2(i * c_margin, 0))), "empty"))
+					if (GUI.Button(new Rect(c_stepsButtonsPos + new Vector2(i * (c_margin + c_buttonSize.x), 0), c_buttonSize), "empty"))
 					{
+						tex = null;
 						OpenStep(i);
 					}
 				}
@@ -132,22 +134,30 @@ public class MoveEditor : EditorWindow
 
 			if (texSelectedThisFrame)
 			{
-				OpenTexture();
+				OpenTexture(tex);
 			}
+
+			// ----------------------------------------
+			// duration
+			GUI.Label(new Rect(10, c_stepTextureRect.y, 50, 16), "duration : ");
+			curStep.duration = EditorGUI.IntField(
+				new Rect(60, c_stepTextureRect.y, 50, 16),
+				curStep.duration);
 		}
 
 		if (texCustomAlpha)
 		{
+
 			// ----------------------------------------
 			// add boxes
-			if (GUI.Button(new Rect(40, 150, c_buttonSize.x, c_buttonSize.y), "ADD"))
+			if (GUI.Button(new Rect(40, 200, c_buttonSize.x, c_buttonSize.y), "ADD"))
 			{
 				AddHitbox();
 			}
 
 			// ----------------------------------------
 			// remove boxes
-			if (GUI.Button(new Rect(40, 150 + c_buttonSize.y + c_margin, c_buttonSize.x, c_buttonSize.y), "REM"))
+			if (GUI.Button(new Rect(40, 200 + c_buttonSize.y + c_margin, c_buttonSize.x, c_buttonSize.y), "REM"))
 			{
 				RemoveHitbox(ref selection.selectedBox);
 				selection.Unselect();
@@ -181,8 +191,11 @@ public class MoveEditor : EditorWindow
 		curStep = curMove.steps[_i];
 		if (curStep.texture != null)
 		{
-			tex = curStep.texture;
-			OpenTexture();
+			OpenTexture(curStep.texture);
+		}
+		else
+		{
+			texCustomAlpha = null;
 		}
 	}
 
@@ -200,9 +213,10 @@ public class MoveEditor : EditorWindow
 		hitboxes.Remove(_hitbox);
 	}
 
-	void OpenTexture()
+	void OpenTexture(Texture2D _tex)
 	{
-		CopyTexture2D(ref texCustomAlpha, tex);
+		CopyTexture2D(ref curStep.texture, _tex);
+		CopyTexture2D(ref texCustomAlpha, _tex);
 		texCustomAlpha.SetAlphaToColor(Color.cyan);
 	}
 
