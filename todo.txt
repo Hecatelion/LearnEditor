@@ -1,0 +1,2 @@
+- write boxes data in Scriptable object
+- load saved boxes
