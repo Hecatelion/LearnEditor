@@ -6,6 +6,11 @@ using UnityEditor;
 
 public class MoveEditor : EditorWindow
 {
+	Move curMove = null;
+	Step curStep = null;
+	List<Box> hitboxes = new List<Box>();
+	Selection selection = new Selection();
+
 	static readonly int c_margin = 20;
 	static readonly Vector2 c_marginVec = new Vector2(c_margin, c_margin);
 	static readonly Vector2 c_stepsButtonsPos = new Vector2(50, 75);
@@ -17,12 +22,6 @@ public class MoveEditor : EditorWindow
 
 	Event curEvent;
 
-	Move curMove = null;
-	Step curStep = null;
-	//MoveType moveType;
-	//int nbStep;
-	List<Box> hitboxes = new List<Box>();
-	Selection selection = new Selection();
 	bool hasSelectedABoxThisFrame;
 
 	Color hitBoxColor;
@@ -42,7 +41,9 @@ public class MoveEditor : EditorWindow
 	}
 
 	void Update()
-    {
+	{
+		UpdateCurStepBoxes();
+
 		// selection operations
 		selection.Update(curEvent);
 
@@ -53,6 +54,7 @@ public class MoveEditor : EditorWindow
 		{
 			hasSelectedABoxThisFrame = true;
 		}
+		// try select box
 		else
 		{
 			foreach (var hitbox in hitboxes)
@@ -69,6 +71,7 @@ public class MoveEditor : EditorWindow
 			}
 		}
 
+		// unselection
 		if (!hasSelectedABoxThisFrame && selection.selectedBox != null &&
 			curEvent.type == EventType.MouseDown && !selection.IsReceivingEvent())
 		{
@@ -84,11 +87,8 @@ public class MoveEditor : EditorWindow
 		// ----------------------------------------
 		// move selection
 		GUI.Label(new Rect(50, 25, 50, 16), "move : ");
-		curMove = (Move)EditorGUI.ObjectField(
-			new Rect(150, 25, 300, 16),
-			curMove,
-			typeof(Move),
-			true);
+		curMove = (Move)EditorGUI.ObjectField(new Rect(150, 25, 300, 16),	
+			curMove, typeof(Move), true);
 
 		// ----------------------------------------
 		// step selection
@@ -97,20 +97,19 @@ public class MoveEditor : EditorWindow
 			for (int i = 0; i < curMove.steps.Count; ++i)
 			{
 				Texture2D stepTex = curMove.steps[i].texture;
+
 				if (stepTex)
 				{
 					if (GUI.Button(new Rect(c_stepsButtonsPos + new Vector2(i * (c_margin + c_buttonSize.x), 0), c_buttonSize), stepTex))
 					{
-						tex = null;
-						OpenStep(i);
+						SwitchToStep(i);
 					}
 				}
 				else
 				{
 					if (GUI.Button(new Rect(c_stepsButtonsPos + new Vector2(i * (c_margin + c_buttonSize.x), 0), c_buttonSize), "empty"))
 					{
-						tex = null;
-						OpenStep(i);
+						SwitchToStep(i);
 					}
 				}
 			}
@@ -189,6 +188,8 @@ public class MoveEditor : EditorWindow
 	void OpenStep(int _i)
 	{
 		curStep = curMove.steps[_i];
+		SetToolBoxesToCurStep();
+
 		if (curStep.texture != null)
 		{
 			OpenTexture(curStep.texture);
@@ -199,6 +200,18 @@ public class MoveEditor : EditorWindow
 		}
 	}
 
+	void SetToolBoxesToCurStep()
+	{
+		foreach (var box in curStep.hitboxes)
+		{
+			var tempBox = new Box();
+			tempBox.dimension = box;
+			tempBox.type = BoxType.HitBox;
+
+			hitboxes.Add(tempBox);
+		}
+	}
+
 	void AddHitbox()
 	{
 		Box hitbox = new Box();
@@ -206,11 +219,13 @@ public class MoveEditor : EditorWindow
 		hitbox.dimension = new Rect(110, 110, 100, 80);
 
 		hitboxes.Add(hitbox);
+		curStep.hitboxes.Add(hitbox.dimension);
 	}
 
 	void RemoveHitbox(ref Box _hitbox)
 	{
 		hitboxes.Remove(_hitbox);
+		curStep.hitboxes.Remove(_hitbox.dimension);
 	}
 
 	void OpenTexture(Texture2D _tex)
@@ -231,5 +246,23 @@ public class MoveEditor : EditorWindow
 
 		dest.SetPixels(src.GetPixels());
 		dest.Apply();
+	}
+
+	void UpdateCurStepBoxes()
+	{
+		if (hitboxes != null && curStep != null)
+		{
+			for (int i = 0; i < hitboxes.Count; ++i)
+			{
+				curStep.hitboxes[i] = hitboxes[i].dimension;
+			}
+		}
+	}
+
+	void SwitchToStep(int _i)
+	{
+		tex = null;
+		hitboxes.Clear();
+		OpenStep(_i);
 	}
 }

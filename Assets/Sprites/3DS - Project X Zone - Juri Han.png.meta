@@ -1,0 +1,2755 @@
+fileFormatVersion: 2
+guid: e6eb5738bc0fc5d4ebe05ffa3040eb48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4171744894188165523
+    second: 3DS - Project X Zone - Juri Han_0
+  - first:
+      213: -4669206704794857993
+    second: 3DS - Project X Zone - Juri Han_1
+  - first:
+      213: 7196439503492747645
+    second: 3DS - Project X Zone - Juri Han_2
+  - first:
+      213: -6872018302031577043
+    second: 3DS - Project X Zone - Juri Han_3
+  - first:
+      213: 4286466566776956442
+    second: 3DS - Project X Zone - Juri Han_4
+  - first:
+      213: -4941553254054340987
+    second: 3DS - Project X Zone - Juri Han_5
+  - first:
+      213: 3162118198270712442
+    second: 3DS - Project X Zone - Juri Han_6
+  - first:
+      213: 6461754023062058218
+    second: 3DS - Project X Zone - Juri Han_7
+  - first:
+      213: -3228060209965095608
+    second: 3DS - Project X Zone - Juri Han_8
+  - first:
+      213: -1496528937739148842
+    second: 3DS - Project X Zone - Juri Han_9
+  - first:
+      213: 9135084641394453873
+    second: 3DS - Project X Zone - Juri Han_10
+  - first:
+      213: -7963677336032060827
+    second: 3DS - Project X Zone - Juri Han_11
+  - first:
+      213: 2764204737036940759
+    second: 3DS - Project X Zone - Juri Han_12
+  - first:
+      213: -8416827021258903242
+    second: 3DS - Project X Zone - Juri Han_13
+  - first:
+      213: 473522432230336093
+    second: 3DS - Project X Zone - Juri Han_14
+  - first:
+      213: 1477037848350010272
+    second: 3DS - Project X Zone - Juri Han_15
+  - first:
+      213: -4070574439821093430
+    second: 3DS - Project X Zone - Juri Han_16
+  - first:
+      213: -1469120715501834049
+    second: 3DS - Project X Zone - Juri Han_17
+  - first:
+      213: 8604350668328399692
+    second: 3DS - Project X Zone - Juri Han_18
+  - first:
+      213: -4106305520728013673
+    second: 3DS - Project X Zone - Juri Han_19
+  - first:
+      213: 2031185121767710175
+    second: 3DS - Project X Zone - Juri Han_20
+  - first:
+      213: 2156465145928076374
+    second: 3DS - Project X Zone - Juri Han_21
+  - first:
+      213: -6077799452876616510
+    second: 3DS - Project X Zone - Juri Han_22
+  - first:
+      213: -1918466918524235436
+    second: 3DS - Project X Zone - Juri Han_23
+  - first:
+      213: 3846359730830055673
+    second: 3DS - Project X Zone - Juri Han_24
+  - first:
+      213: -3062489018071632607
+    second: 3DS - Project X Zone - Juri Han_25
+  - first:
+      213: 317218178292387240
+    second: 3DS - Project X Zone - Juri Han_26
+  - first:
+      213: -3228409378909169792
+    second: 3DS - Project X Zone - Juri Han_27
+  - first:
+      213: 4393151485926947610
+    second: 3DS - Project X Zone - Juri Han_28
+  - first:
+      213: 5021146576216823446
+    second: 3DS - Project X Zone - Juri Han_29
+  - first:
+      213: 7084653002284071484
+    second: 3DS - Project X Zone - Juri Han_30
+  - first:
+      213: 8691562079345165413
+    second: 3DS - Project X Zone - Juri Han_31
+  - first:
+      213: -7797837446541496072
+    second: 3DS - Project X Zone - Juri Han_32
+  - first:
+      213: 8628843518954189255
+    second: 3DS - Project X Zone - Juri Han_33
+  - first:
+      213: 5783544272645113833
+    second: 3DS - Project X Zone - Juri Han_34
+  - first:
+      213: -3682277996928352113
+    second: 3DS - Project X Zone - Juri Han_35
+  - first:
+      213: -1274391016686846377
+    second: 3DS - Project X Zone - Juri Han_36
+  - first:
+      213: 6622461523671446933
+    second: 3DS - Project X Zone - Juri Han_37
+  - first:
+      213: -6559099093973501905
+    second: 3DS - Project X Zone - Juri Han_38
+  - first:
+      213: -4747031725537513947
+    second: 3DS - Project X Zone - Juri Han_39
+  - first:
+      213: 8463191481384697940
+    second: 3DS - Project X Zone - Juri Han_40
+  - first:
+      213: -1146736558015802178
+    second: 3DS - Project X Zone - Juri Han_41
+  - first:
+      213: -7971760875307065897
+    second: 3DS - Project X Zone - Juri Han_42
+  - first:
+      213: 5703425264247057854
+    second: 3DS - Project X Zone - Juri Han_43
+  - first:
+      213: -4776251648020518608
+    second: 3DS - Project X Zone - Juri Han_44
+  - first:
+      213: 6225734770322633673
+    second: 3DS - Project X Zone - Juri Han_45
+  - first:
+      213: 4989348982005045816
+    second: 3DS - Project X Zone - Juri Han_46
+  - first:
+      213: 3257951132374857702
+    second: 3DS - Project X Zone - Juri Han_47
+  - first:
+      213: -916032293860966303
+    second: 3DS - Project X Zone - Juri Han_48
+  - first:
+      213: -2719518647872257779
+    second: 3DS - Project X Zone - Juri Han_49
+  - first:
+      213: -5956672033222107525
+    second: 3DS - Project X Zone - Juri Han_50
+  - first:
+      213: 3388617885063454013
+    second: 3DS - Project X Zone - Juri Han_51
+  - first:
+      213: 5026890648226863415
+    second: 3DS - Project X Zone - Juri Han_52
+  - first:
+      213: -2338016261585527069
+    second: 3DS - Project X Zone - Juri Han_53
+  - first:
+      213: 1069602794346038531
+    second: 3DS - Project X Zone - Juri Han_54
+  - first:
+      213: -3565597038185527419
+    second: 3DS - Project X Zone - Juri Han_55
+  - first:
+      213: 7888836807803212194
+    second: 3DS - Project X Zone - Juri Han_56
+  - first:
+      213: 2385964176278482733
+    second: 3DS - Project X Zone - Juri Han_57
+  - first:
+      213: -8264536985349604561
+    second: 3DS - Project X Zone - Juri Han_58
+  - first:
+      213: 4805368502792523034
+    second: 3DS - Project X Zone - Juri Han_59
+  - first:
+      213: -6220358787001365026
+    second: 3DS - Project X Zone - Juri Han_60
+  - first:
+      213: -326180257818534951
+    second: 3DS - Project X Zone - Juri Han_61
+  - first:
+      213: -1176406036457957576
+    second: 3DS - Project X Zone - Juri Han_62
+  - first:
+      213: -1110300549117940924
+    second: 3DS - Project X Zone - Juri Han_63
+  - first:
+      213: 4646754448046888326
+    second: 3DS - Project X Zone - Juri Han_64
+  - first:
+      213: 7445353208209506999
+    second: 3DS - Project X Zone - Juri Han_65
+  - first:
+      213: 7873286644744375819
+    second: 3DS - Project X Zone - Juri Han_66
+  - first:
+      213: -1804142852407564412
+    second: 3DS - Project X Zone - Juri Han_67
+  - first:
+      213: -8695653576731675069
+    second: 3DS - Project X Zone - Juri Han_68
+  - first:
+      213: 70066196429410319
+    second: 3DS - Project X Zone - Juri Han_69
+  - first:
+      213: 8741639979116271836
+    second: 3DS - Project X Zone - Juri Han_70
+  - first:
+      213: 3899040998726307094
+    second: 3DS - Project X Zone - Juri Han_71
+  - first:
+      213: 4018841016671654403
+    second: 3DS - Project X Zone - Juri Han_72
+  - first:
+      213: 5815916661402824070
+    second: 3DS - Project X Zone - Juri Han_73
+  - first:
+      213: 8134463899148107490
+    second: 3DS - Project X Zone - Juri Han_74
+  - first:
+      213: -647086228988753260
+    second: 3DS - Project X Zone - Juri Han_75
+  - first:
+      213: 2027142575653737877
+    second: 3DS - Project X Zone - Juri Han_76
+  - first:
+      213: 3620635162651816166
+    second: 3DS - Project X Zone - Juri Han_77
+  - first:
+      213: -5202055524885177306
+    second: 3DS - Project X Zone - Juri Han_78
+  - first:
+      213: -1026222731012733002
+    second: 3DS - Project X Zone - Juri Han_79
+  - first:
+      213: 7286712675561722912
+    second: 3DS - Project X Zone - Juri Han_80
+  - first:
+      213: -1819480232932542494
+    second: 3DS - Project X Zone - Juri Han_81
+  - first:
+      213: -880087806506039423
+    second: 3DS - Project X Zone - Juri Han_82
+  - first:
+      213: 3297144611547089515
+    second: 3DS - Project X Zone - Juri Han_83
+  - first:
+      213: 6417305601772101437
+    second: 3DS - Project X Zone - Juri Han_84
+  - first:
+      213: 4533568069901510111
+    second: 3DS - Project X Zone - Juri Han_85
+  - first:
+      213: 6989648101928612630
+    second: 3DS - Project X Zone - Juri Han_86
+  - first:
+      213: 4418373812254179109
+    second: 3DS - Project X Zone - Juri Han_87
+  - first:
+      213: 274891856560868137
+    second: 3DS - Project X Zone - Juri Han_88
+  - first:
+      213: -5988031472437591988
+    second: 3DS - Project X Zone - Juri Han_89
+  - first:
+      213: 1345099322459290900
+    second: 3DS - Project X Zone - Juri Han_90
+  - first:
+      213: 8156182075313875369
+    second: 3DS - Project X Zone - Juri Han_91
+  - first:
+      213: 6414399672465234009
+    second: 3DS - Project X Zone - Juri Han_92
+  - first:
+      213: 3602616902609090673
+    second: 3DS - Project X Zone - Juri Han_93
+  - first:
+      213: -4070849806756994867
+    second: 3DS - Project X Zone - Juri Han_94
+  - first:
+      213: 6507553994952984213
+    second: 3DS - Project X Zone - Juri Han_95
+  - first:
+      213: 1633391741725816901
+    second: 3DS - Project X Zone - Juri Han_96
+  - first:
+      213: -3193080340822282517
+    second: 3DS - Project X Zone - Juri Han_97
+  - first:
+      213: -6426802968629185954
+    second: 3DS - Project X Zone - Juri Han_98
+  - first:
+      213: 6311887798035497270
+    second: 3DS - Project X Zone - Juri Han_99
+  - first:
+      213: -1978685603916616881
+    second: 3DS - Project X Zone - Juri Han_100
+  - first:
+      213: 3295294947548461445
+    second: 3DS - Project X Zone - Juri Han_101
+  - first:
+      213: -5241469774372082610
+    second: 3DS - Project X Zone - Juri Han_102
+  - first:
+      213: 1389070139823382911
+    second: 3DS - Project X Zone - Juri Han_103
+  - first:
+      213: -6203336377979824222
+    second: 3DS - Project X Zone - Juri Han_104
+  - first:
+      213: -761978264010618805
+    second: 3DS - Project X Zone - Juri Han_105
+  - first:
+      213: 8914410456113807213
+    second: 3DS - Project X Zone - Juri Han_106
+  - first:
+      213: 4975770921961725812
+    second: 3DS - Project X Zone - Juri Han_107
+  - first:
+      213: -1362620440911824311
+    second: 3DS - Project X Zone - Juri Han_108
+  - first:
+      213: -7216703499884303443
+    second: 3DS - Project X Zone - Juri Han_109
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c2a40775d21a04aa267efc6db7d814
+      internalID: -4171744894188165523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5216d76637ead64696d01e63efe65ee
+      internalID: -4669206704794857993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_2
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf4ed088d1864543b44b7d9531c80c2
+      internalID: 7196439503492747645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_3
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9ada4b6a7604946b7da04389becc17
+      internalID: -6872018302031577043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_4
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45b7d7bc6a0d724fa81fdd332d6d3d9
+      internalID: 4286466566776956442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_5
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba804895fe84f74aa6a8ff8891a1b38
+      internalID: -4941553254054340987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_6
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac4e408a3c70d644b47e445e325cf52
+      internalID: 3162118198270712442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_7
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95c968816d986d4391b163b4f8cc6f9
+      internalID: 6461754023062058218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_8
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c46d58fb729a84093d0760c7ca1b3a
+      internalID: -3228060209965095608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_9
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606863b1e3b2bcd459d724d7cdecba79
+      internalID: -1496528937739148842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_10
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1288
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddad3772e8ef914da493057a18c929d
+      internalID: 9135084641394453873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fc8b44b5599cd439d955b6d33ebba8
+      internalID: -7963677336032060827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730bb4f3da78e2746943dc7d1c65874f
+      internalID: 2764204737036940759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae0a6cf674ace24b808682b1f353e45
+      internalID: -8416827021258903242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2c73ae583df5e469786f72f007d8c9
+      internalID: 473522432230336093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_15
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773601a498aee364c8e3553f83c0aa8a
+      internalID: 1477037848350010272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_16
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8928c871d0191a349907f9e0f9346565
+      internalID: -4070574439821093430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_17
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd025553ba17ba849960ec1be4c169d5
+      internalID: -1469120715501834049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_18
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e04f84664a97bc48b2c2cfc1edf1774
+      internalID: 8604350668328399692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_19
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f151ad7eecfa4ae4a91caa67833ad77c
+      internalID: -4106305520728013673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_20
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e82436f60e892642953afe72f0ab6be
+      internalID: 2031185121767710175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_21
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1159
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7505748fe84062743a54a2de02f17601
+      internalID: 2156465145928076374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902a7884b72be3b4e9ffb0aa3673178f
+      internalID: -6077799452876616510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_23
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a8eb64f1ff4744fb8b4ea2e8eaf3ab
+      internalID: -1918466918524235436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_24
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb168a98b95f144bbb3f2f8d1b43d6c
+      internalID: 3846359730830055673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46f4c6e23b94bf4982d107c63e43832
+      internalID: -3062489018071632607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_26
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b277d3a668654d4c8bbe9d6d2835bbb
+      internalID: 317218178292387240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_27
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449d65359a72dd1409124ea9cd643c76
+      internalID: -3228409378909169792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_28
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f771456602deda41ac0d2199e0019cc
+      internalID: 4393151485926947610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_29
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff60d06de16c08f498402e87ad563f4b
+      internalID: 5021146576216823446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_30
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85f88f49b828c442bf19ff927a54db7
+      internalID: 7084653002284071484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_31
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216e8c56842cdf04eafea17c309fa85f
+      internalID: 8691562079345165413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_32
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1030
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed30aadb959400b40aa974820b5b5a41
+      internalID: -7797837446541496072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f37b441aa70e604ba1763bf1275eaae
+      internalID: 8628843518954189255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_34
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0f177cb8b0ef848a01be6c47a7f815
+      internalID: 5783544272645113833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_35
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891bb42eba6951c43b9dd81f01de5016
+      internalID: -3682277996928352113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_36
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358a6d0c7e1b95d479bbf31785eaccb1
+      internalID: -1274391016686846377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_37
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a507e2ca82c06244abc26ec2cefad91
+      internalID: 6622461523671446933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_38
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4d4764cfdd8df4997ab7bac3650d61
+      internalID: -6559099093973501905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_39
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0421823ad7322ca4784729a651f58bfe
+      internalID: -4747031725537513947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_40
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb49e3c34452f854081f1b627d19d79f
+      internalID: 8463191481384697940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_41
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b537fcb8c22428439eb92525165567d
+      internalID: -1146736558015802178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_42
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ace967a0bf35bf42b8dd2171ddea8d8
+      internalID: -7971760875307065897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_43
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 901
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547cf76cf75c64f4ab7c3d07ced69371
+      internalID: 5703425264247057854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_44
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db559f064c1e3e2418f50372d87b8b60
+      internalID: -4776251648020518608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_45
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d81438e0e42c7843afb34bd94a60cb9
+      internalID: 6225734770322633673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_46
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b5dc5aa213b0d4eb7ca1a99ab9174b
+      internalID: 4989348982005045816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_47
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbdb1280fe6bab4ca3eead136e0d5d8
+      internalID: 3257951132374857702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_48
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4bebca4bfa36a4ab113698a04e460c
+      internalID: -916032293860966303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_49
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5470e19cec9d074588959c4eee70edf
+      internalID: -2719518647872257779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_50
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ac30de618228340a0683dc05553ad4
+      internalID: -5956672033222107525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_51
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd82c58431837e94e9cc2c51dbdaac96
+      internalID: 3388617885063454013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_52
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e12721bfdcb7a5428e0fe692c6ea7ad
+      internalID: 5026890648226863415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_53
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb2dc07a546e374698234c3a99b3706
+      internalID: -2338016261585527069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_54
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 772
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21483ade6c364640a0e6df727e9eed1
+      internalID: 1069602794346038531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_55
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17ffea2676a3a446ba9b3690a6a2512
+      internalID: -3565597038185527419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_56
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cabba04c198194bb3bbc8eb5fdec5c
+      internalID: 7888836807803212194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_57
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f1adc32165ae74ca3c8b7a4a395380
+      internalID: 2385964176278482733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_58
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe8f70b10899604786ef8722854e5e1
+      internalID: -8264536985349604561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_59
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fe28b1069e8d54aa201ad9672e359d
+      internalID: 4805368502792523034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_60
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c6a7088738aba47b5e59492a426580
+      internalID: -6220358787001365026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_61
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5d7365929e7504caee16749e45ab61
+      internalID: -326180257818534951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_62
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79272b084c64c4b47b9c30b2d7aad0d7
+      internalID: -1176406036457957576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_63
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6a9fac1e2b57f4ea56babf2e55ca64
+      internalID: -1110300549117940924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_64
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdddd56d9c5f18b429d41477363eecd2
+      internalID: 4646754448046888326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_65
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 643
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880a57100eb32bc4ba8d71780c709a16
+      internalID: 7445353208209506999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_66
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9b65c732161974ea70ba28d743ff15
+      internalID: 7873286644744375819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_67
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c529f053ef15f02408b4aceb3e113f04
+      internalID: -1804142852407564412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_68
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a518128e4be02124296fb36904c4f5b5
+      internalID: -8695653576731675069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_69
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7343ec8029f544c840a96449e941b0
+      internalID: 70066196429410319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_70
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d247fc047566834a8b95e848f8f92cd
+      internalID: 8741639979116271836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_71
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cba8ca0aba7df54a909d388e52884ee
+      internalID: 3899040998726307094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_72
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4668a1f40e62ea4fb8e37fcc476d3a4
+      internalID: 4018841016671654403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_73
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfe8c5b35b0a9e4e9c7229c9a0eeb76
+      internalID: 5815916661402824070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_74
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f85c4baad977ba42bb4ce4efdbcbcc2
+      internalID: 8134463899148107490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_75
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a82d9ff7436a74aa7a3847b6c25f81
+      internalID: -647086228988753260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_76
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 514
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e9d551e2243f845883d2c083ee6160
+      internalID: 2027142575653737877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_77
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553c4cdf8e2f50c4ba373c6ca5d17329
+      internalID: 3620635162651816166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_78
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6473038351a0c8a46b110d428a67e069
+      internalID: -5202055524885177306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_79
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78be0857dec5d247bcabcd257389c98
+      internalID: -1026222731012733002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_80
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642eba7bedac5f249988a2d51fad6275
+      internalID: 7286712675561722912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_81
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1efcdd9f9f0abe4da62c8c293b049a9
+      internalID: -1819480232932542494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_82
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eec9ec866e15e148a42378aae01465a
+      internalID: -880087806506039423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_83
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dd5989eb58fd442bbf3f5ad9632557
+      internalID: 3297144611547089515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_84
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f590884e1c6d99445807e996a520982b
+      internalID: 6417305601772101437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_85
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c027a2dc464ee144e83fec25d6588f99
+      internalID: 4533568069901510111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_86
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f345ccf69c70147938ed8e1cbbb564
+      internalID: 6989648101928612630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_87
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 385
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1f9199985de494da76f07873118e10
+      internalID: 4418373812254179109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_88
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd2d0d3ad7840744b5baeb94d8bb967
+      internalID: 274891856560868137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_89
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d6a57f77a60784fbbc93a2c88393cc
+      internalID: -5988031472437591988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_90
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2de0a3af191f11479ee6168c8d9432b
+      internalID: 1345099322459290900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_91
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a958945f651f343b14d0b2cdf508ce
+      internalID: 8156182075313875369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_92
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ceccb61173896b4e896375edad7e84b
+      internalID: 6414399672465234009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_93
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6e9c1bf39840948919ffb3ce8e796a
+      internalID: 3602616902609090673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_94
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6cbd8af1239cb44975bf252797683c
+      internalID: -4070849806756994867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_95
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7ee73eb747b5b4aa492d3cea1fd7f8
+      internalID: 6507553994952984213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_96
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e7c3074b6cb354db9fef926e14d526
+      internalID: 1633391741725816901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_97
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca8946c195b3f04697d7017185b6656
+      internalID: -3193080340822282517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_98
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 256
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a76607e985848949a3db4de59571107
+      internalID: -6426802968629185954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_99
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bd01b05c71934468c70db2e7e447fa
+      internalID: 6311887798035497270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_100
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d582498ed0db2cf44b51154119d0e3f0
+      internalID: -1978685603916616881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_101
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e0fe4c0e1b5a649be1fdc6b34abf70
+      internalID: 3295294947548461445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_102
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a3599e9d4b935478d770ed37049055
+      internalID: -5241469774372082610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_103
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dce29d0a00fb3439f2e600a030a8fc
+      internalID: 1389070139823382911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_104
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee773b6d404e967488aaa88a614c63ee
+      internalID: -6203336377979824222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_105
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416b7242727439e4cb69e27b7a4774f6
+      internalID: -761978264010618805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_106
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9d204e845a8f149b58efb2de81d18b
+      internalID: 8914410456113807213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_107
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111217f0871b3d748b670e6f25cc6ec9
+      internalID: 4975770921961725812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_108
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04558e755097f2a46a1ecf66104f04f1
+      internalID: -1362620440911824311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3DS - Project X Zone - Juri Han_109
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 127
+        width: 128
+        height: 128
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0e4db72a7b14e4bbb91195620cd7b6
+      internalID: -7216703499884303443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b957b4d6bcb964847bd7e887a454856c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

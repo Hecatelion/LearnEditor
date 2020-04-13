@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+struct MoveAndInput
+{
+	public Move moveData;
+	public KeyCode key; // use complexe input
+}
+
 public class Character : MonoBehaviour
 {
-	[SerializeField] List<MoveType> moveList;
+	[SerializeField] List<MoveAndInput> moveList;
 	Event evt;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	void Start() {} // delegate inscription
 
-    // Update is called once per frame
-    void Update()
+	void Update()
     {
 		evt = Event.current;
 
-		foreach (var move in moveList)
+		// check if a move input has been pressed
+		foreach (var moveAndInput in moveList)
 		{
-			//if (move.key == evt.keyCode)
+			if (moveAndInput.key == evt.keyCode)
 			{
-				//Use(move);
+				//Use(moveAndInput.moveData);
 				break;
 			}
 		}

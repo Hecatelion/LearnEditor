@@ -22,6 +22,9 @@ public enum BarType
 
 public class Selection
 {
+	public Box selectedBox;
+
+
 	const int windowOffset = 22;
 
 	bool IsClicked
@@ -38,8 +41,6 @@ public class Selection
 	Rect initialBoxDimentions;
 	BarType selectedSide = BarType.none;
 
-	// selected box
-	public Box selectedBox;
 	Vector2 holdOffset; 
 
 
@@ -125,22 +126,6 @@ public class Selection
 		selectedBox = null;
 	}
 
-	private void UpdateGraphics()
-	{ 
-		// size
-		bars[(int)BarType.top].width	 = bars[(int)BarType.bot].width	= selectedBox.dimension.width + thickness * 2;
-		bars[(int)BarType.left].height	 = bars[(int)BarType.right].height = selectedBox.dimension.height + thickness * 2;
-
-		// pos
-		bars[(int)BarType.top].x = bars[(int)BarType.left].x = bars[(int)BarType.bot].x = selectedBox.dimension.x - thickness;
-		bars[(int)BarType.right].x = selectedBox.dimension.x + selectedBox.dimension.width;
-		
-		bars[(int)BarType.top].y = bars[(int)BarType.left].y = bars[(int)BarType.right].y = selectedBox.dimension.y - thickness;
-		bars[(int)BarType.bot].y = selectedBox.dimension.y + selectedBox.dimension.height;
-
-		bars[(int)BarType.center].position = selectedBox.dimension.position + selectedBox.dimension.size / 2 - bars[(int)BarType.center].size / 2;
-	}
-
 	private void MoveSelection(Event _curEvent)
 	{
 		if (_curEvent.button == 0)
@@ -181,4 +166,21 @@ public class Selection
 
 		UpdateGraphics();
 	}
+
+	private void UpdateGraphics()
+	{
+		// size
+		bars[(int)BarType.top].width = bars[(int)BarType.bot].width = selectedBox.dimension.width + thickness * 2;
+		bars[(int)BarType.left].height = bars[(int)BarType.right].height = selectedBox.dimension.height + thickness * 2;
+
+		// pos
+		bars[(int)BarType.top].x = bars[(int)BarType.left].x = bars[(int)BarType.bot].x = selectedBox.dimension.x - thickness;
+		bars[(int)BarType.right].x = selectedBox.dimension.x + selectedBox.dimension.width;
+
+		bars[(int)BarType.top].y = bars[(int)BarType.left].y = bars[(int)BarType.right].y = selectedBox.dimension.y - thickness;
+		bars[(int)BarType.bot].y = selectedBox.dimension.y + selectedBox.dimension.height;
+
+		bars[(int)BarType.center].position = selectedBox.dimension.position + selectedBox.dimension.size / 2 - bars[(int)BarType.center].size / 2;
+	}
+
 }

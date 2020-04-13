@@ -10,24 +10,46 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6459ff260f5b6c240b20ca752bf7aa11, type: 3}
-  m_Name: DefaultMove
+  m_Name: KickHeavy
   m_EditorClassIdentifier: 
   steps:
-  - duration: 10
+  - texture: {fileID: 0}
+    duration: 1
     damages: 0
     hitboxes: []
     hurtboxes: []
     grabboxes: []
-    texture: {fileID: 0}
-  - duration: 20
+  - texture: {fileID: 0}
+    duration: 1
+    damages: 0
+    hitboxes:
+    - serializedVersion: 2
+      x: 161
+      y: 174
+      width: 100
+      height: 80
+    hurtboxes: []
+    grabboxes: []
+  - texture: {fileID: 0}
+    duration: 2
+    damages: 0
+    hitboxes:
+    - serializedVersion: 2
+      x: 238
+      y: 157
+      width: 68
+      height: 259
+    hurtboxes: []
+    grabboxes: []
+  - texture: {fileID: 0}
+    duration: 1
     damages: 0
     hitboxes: []
     hurtboxes: []
     grabboxes: []
-    texture: {fileID: 0}
-  - duration: 0
+  - texture: {fileID: 0}
+    duration: 1
     damages: 0
     hitboxes: []
     hurtboxes: []
     grabboxes: []
-    texture: {fileID: 0}
