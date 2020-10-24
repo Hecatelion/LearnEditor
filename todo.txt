@@ -1,2 +1,2 @@
-- write boxes data in Scriptable object
-- load saved boxes
+- spriteRenderer only can change sprite -> must save sprites instead of texture2D
+- 

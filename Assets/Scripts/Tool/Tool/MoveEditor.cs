@@ -17,14 +17,18 @@ public class MoveEditor : EditorWindow
 	static readonly Vector2 c_buttonSize = new Vector2(50, 50);
 	static readonly Rect c_stepTextureRect = new Rect(110, 150, 350, 350);
 
-	Texture2D tex;
+	//Texture2D tex;
+	Texture2D curTex;
 	Texture2D texCustomAlpha;
 
 	Event curEvent;
 
 	bool hasSelectedABoxThisFrame;
 
+	// Colors
 	Color hitBoxColor;
+	Color defaultGUIColor;
+	Color selectedGUIColor;
 
 	[MenuItem("Custom/MoveEditor")]
 	static void Init()
@@ -38,6 +42,9 @@ public class MoveEditor : EditorWindow
 	{
 		hitBoxColor = Color.red;
 		hitBoxColor.a = 0.6f;
+
+		defaultGUIColor = GUI.backgroundColor;
+		selectedGUIColor = Color.yellow;
 	}
 
 	void Update()
@@ -96,6 +103,11 @@ public class MoveEditor : EditorWindow
 		{
 			for (int i = 0; i < curMove.steps.Count; ++i)
 			{
+				if (curMove.steps[i] == curStep)
+				{
+					GUI.backgroundColor = selectedGUIColor;
+				}
+
 				Texture2D stepTex = curMove.steps[i].texture;
 
 				if (stepTex)
@@ -112,28 +124,32 @@ public class MoveEditor : EditorWindow
 						SwitchToStep(i);
 					}
 				}
+
+				if (curMove.steps[i] == curStep)
+				{
+					GUI.backgroundColor = defaultGUIColor;
+				}
 			}
+
+			// highlight selected button
 		}
 
 		// ----------------------------------------
 		// texture selection
 		if (curStep != null)
 		{
-			bool texWasNull = !tex;
+			curTex = curStep.texture;
 
-			// Texture 2D field
 			GUI.Label(new Rect(50, 550, 50, 16), "texture : ");
-			tex = (Texture2D)EditorGUI.ObjectField(
+			curStep.texture = (Texture2D)EditorGUI.ObjectField(
 				new Rect(150, 550, 300, 16),
-				tex,
+				curStep.texture,
 				typeof(Texture2D),
 				true);
 
-			bool texSelectedThisFrame = texWasNull && tex != null;
-
-			if (texSelectedThisFrame)
+			if (curTex != curStep.texture)
 			{
-				OpenTexture(tex);
+				OpenTexture(curStep.texture);
 			}
 
 			// ----------------------------------------
@@ -164,7 +180,7 @@ public class MoveEditor : EditorWindow
 		}
 
 		// ----------------------------------------
-		// display
+		// display texture and boxes
 
 		// sprite open in tool
 		if (texCustomAlpha)
@@ -230,7 +246,6 @@ public class MoveEditor : EditorWindow
 
 	void OpenTexture(Texture2D _tex)
 	{
-		CopyTexture2D(ref curStep.texture, _tex);
 		CopyTexture2D(ref texCustomAlpha, _tex);
 		texCustomAlpha.SetAlphaToColor(Color.cyan);
 	}
@@ -261,7 +276,6 @@ public class MoveEditor : EditorWindow
 
 	void SwitchToStep(int _i)
 	{
-		tex = null;
 		hitboxes.Clear();
 		OpenStep(_i);
 	}

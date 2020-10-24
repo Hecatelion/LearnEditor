@@ -12,20 +12,26 @@ struct MoveAndInput
 public class Character : MonoBehaviour
 {
 	[SerializeField] List<MoveAndInput> moveList;
-	Event evt;
 
-	void Start() {} // delegate inscription
+	SpriteRenderer renderer;
+
+	void Start() 
+	{
+		renderer = GetComponent<SpriteRenderer>();
+
+		Texture2D texture = moveList[0].moveData.steps[0].texture;
+		renderer.sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+	} // delegate inscription
 
 	void Update()
     {
-		evt = Event.current;
-
 		// check if a move input has been pressed
 		foreach (var moveAndInput in moveList)
 		{
-			if (moveAndInput.key == evt.keyCode)
+			if (Input.GetKeyDown(moveAndInput.key))
 			{
 				//Use(moveAndInput.moveData);
+				Debug.Log("KeyPressed");
 				break;
 			}
 		}

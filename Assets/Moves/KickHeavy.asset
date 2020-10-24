@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: KickHeavy
   m_EditorClassIdentifier: 
   steps:
-  - texture: {fileID: 0}
+  - texture: {fileID: 2800000, guid: b5f0e8d90131f0c40ac0d4882961c9d8, type: 3}
     duration: 1
     damages: 0
     hitboxes: []
     hurtboxes: []
     grabboxes: []
-  - texture: {fileID: 0}
+  - texture: {fileID: 2800000, guid: 4ea74f0d5da8bb2418236cfee2cfe615, type: 3}
     duration: 1
     damages: 0
     hitboxes:
@@ -30,7 +30,7 @@ MonoBehaviour:
       height: 80
     hurtboxes: []
     grabboxes: []
-  - texture: {fileID: 0}
+  - texture: {fileID: 2800000, guid: b71b5bf51b0a86341bc497aa9f3ff3d4, type: 3}
     duration: 2
     damages: 0
     hitboxes:
@@ -41,13 +41,7 @@ MonoBehaviour:
       height: 259
     hurtboxes: []
     grabboxes: []
-  - texture: {fileID: 0}
-    duration: 1
-    damages: 0
-    hitboxes: []
-    hurtboxes: []
-    grabboxes: []
-  - texture: {fileID: 0}
+  - texture: {fileID: 2800000, guid: ac4137650aa579044b33b06c8da38165, type: 3}
     duration: 1
     damages: 0
     hitboxes: []
