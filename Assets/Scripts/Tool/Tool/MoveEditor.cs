@@ -8,6 +8,7 @@ public class MoveEditor : EditorWindow
 {
 	Move curMove = null;
 	Step curStep = null;
+	int curStepIndex = -1;
 	List<Box> hitboxes = new List<Box>();
 	Selection selection = new Selection();
 
@@ -18,8 +19,11 @@ public class MoveEditor : EditorWindow
 	static readonly Rect c_stepTextureRect = new Rect(110, 150, 350, 350);
 
 	//Texture2D tex;
-	Texture2D curTex;
-	Texture2D texCustomAlpha;
+	//Texture2D curTex;
+	//Texture2D texCustomAlpha;
+	Texture2D[] stepsTextures;
+	Texture2D toolTex;
+	Sprite curSpr;
 
 	Event curEvent;
 
@@ -93,9 +97,18 @@ public class MoveEditor : EditorWindow
 
 		// ----------------------------------------
 		// move selection
+
+		Move tempMove = curMove;
+
 		GUI.Label(new Rect(50, 25, 50, 16), "move : ");
-		curMove = (Move)EditorGUI.ObjectField(new Rect(150, 25, 300, 16),	
+		curMove = (Move)EditorGUI.ObjectField(new Rect(150, 25, 300, 16),
 			curMove, typeof(Move), true);
+
+		// a new sprite has been selected
+		if (tempMove != curMove)
+		{
+			UpdateStepsTextures();
+		}
 
 		// ----------------------------------------
 		// step selection
@@ -108,11 +121,11 @@ public class MoveEditor : EditorWindow
 					GUI.backgroundColor = selectedGUIColor;
 				}
 
-				Texture2D stepTex = curMove.steps[i].texture;
+				Sprite stepSpr = curMove.steps[i].sprite;
 
-				if (stepTex)
+				if (stepSpr)
 				{
-					if (GUI.Button(new Rect(c_stepsButtonsPos + new Vector2(i * (c_margin + c_buttonSize.x), 0), c_buttonSize), stepTex))
+					if (GUI.Button(new Rect(c_stepsButtonsPos + new Vector2(i * (c_margin + c_buttonSize.x), 0), c_buttonSize), stepsTextures[i]))
 					{
 						SwitchToStep(i);
 					}
@@ -135,21 +148,23 @@ public class MoveEditor : EditorWindow
 		}
 
 		// ----------------------------------------
-		// texture selection
+		// sprite selection
 		if (curStep != null)
 		{
-			curTex = curStep.texture;
+			curSpr = curStep.sprite;
 
-			GUI.Label(new Rect(50, 550, 50, 16), "texture : ");
-			curStep.texture = (Texture2D)EditorGUI.ObjectField(
+			GUI.Label(new Rect(50, 550, 50, 16), "sprite : ");
+			curStep.sprite = (Sprite)EditorGUI.ObjectField(
 				new Rect(150, 550, 300, 16),
-				curStep.texture,
-				typeof(Texture2D),
+				curStep.sprite,
+				typeof(Sprite),
 				true);
 
-			if (curTex != curStep.texture)
+			// a new sprite has been selected
+			if (curSpr != curStep.sprite)
 			{
-				OpenTexture(curStep.texture);
+				UpdateStepsTextures(curStepIndex);
+				UpdateToolTexture();
 			}
 
 			// ----------------------------------------
@@ -160,9 +175,8 @@ public class MoveEditor : EditorWindow
 				curStep.duration);
 		}
 
-		if (texCustomAlpha)
+		if (toolTex)
 		{
-
 			// ----------------------------------------
 			// add boxes
 			if (GUI.Button(new Rect(40, 200, c_buttonSize.x, c_buttonSize.y), "ADD"))
@@ -183,10 +197,13 @@ public class MoveEditor : EditorWindow
 		// display texture and boxes
 
 		// sprite open in tool
-		if (texCustomAlpha)
+		if (toolTex)
 		{
 			// draw sprite 
-			EditorGUI.DrawPreviewTexture(c_stepTextureRect, texCustomAlpha);
+			if (toolTex != null)
+			{
+				EditorGUI.DrawPreviewTexture(c_stepTextureRect, toolTex);
+			}
 
 			// draw hitboxes
 			foreach (var box in hitboxes)
@@ -195,7 +212,7 @@ public class MoveEditor : EditorWindow
 			}
 
 			// draw selection
-			if (selection.selectedBox != null)		selection.Display();
+			if (selection.selectedBox != null) selection.Display();
 		}
 
 		Repaint();
@@ -203,17 +220,23 @@ public class MoveEditor : EditorWindow
 
 	void OpenStep(int _i)
 	{
+		curStepIndex = _i;
 		curStep = curMove.steps[_i];
+		selection.Unselect();
 		SetToolBoxesToCurStep();
 
-		if (curStep.texture != null)
+		UpdateToolTexture();
+
+		/*
+		if (curStep.sprite != null)
 		{
-			OpenTexture(curStep.texture);
+			CopyTexture2D(ref toolTex, stepsTextures[_i]);
 		}
 		else
 		{
-			texCustomAlpha = null;
+			toolTex = null;
 		}
+		*/
 	}
 
 	void SetToolBoxesToCurStep()
@@ -244,10 +267,14 @@ public class MoveEditor : EditorWindow
 		curStep.hitboxes.Remove(_hitbox.dimension);
 	}
 
-	void OpenTexture(Texture2D _tex)
+	void SetRefTexFromSprite(ref Texture2D _tex, Sprite _spr)
 	{
-		CopyTexture2D(ref texCustomAlpha, _tex);
-		texCustomAlpha.SetAlphaToColor(Color.cyan);
+		Rect sprRect = _spr.rect;
+		_tex = new Texture2D((int)sprRect.width, (int)sprRect.height);
+		_tex.filterMode = FilterMode.Point;
+
+		_tex.SetPixels(_spr.texture.GetPixels((int)sprRect.x, (int)sprRect.y, (int)sprRect.width, (int)sprRect.height));
+		_tex.Apply();
 	}
 
 	public void CopyTexture2D(ref Texture2D dest, Texture2D src)
@@ -278,5 +305,49 @@ public class MoveEditor : EditorWindow
 	{
 		hitboxes.Clear();
 		OpenStep(_i);
+	}
+
+	void UpdateStepsTextures(int _index = -1)
+	{
+		if (_index == -1)
+		{
+			int nbSteps = curMove.steps.Count;
+			stepsTextures = new Texture2D[nbSteps];
+
+			for (int i = 0; i < nbSteps; i++)
+			{
+				if (curMove.steps[i].sprite != null)
+				{
+					SetRefTexFromSprite(ref stepsTextures[i], curMove.steps[i].sprite);
+				}
+				else
+				{
+					stepsTextures[i] = null;
+				}
+			}
+		}
+		else
+		{
+			if (curMove.steps[_index].sprite != null)
+			{
+				SetRefTexFromSprite(ref stepsTextures[_index], curMove.steps[_index].sprite);
+			}
+			else
+			{
+				stepsTextures[_index] = null;
+			}
+		}
+	}
+
+	void UpdateToolTexture()
+	{
+		if (stepsTextures[curStepIndex] != null)
+		{
+			CopyTexture2D(ref toolTex, stepsTextures[curStepIndex]);
+		}
+		else
+		{
+			toolTex = null;
+		}
 	}
 }

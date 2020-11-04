@@ -5,7 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class Step
 {
-	public Texture2D texture;
+	//public Texture2D texture;
+	public Sprite sprite;
 
 	public int duration;
 	[HideInInspector] public int damages;

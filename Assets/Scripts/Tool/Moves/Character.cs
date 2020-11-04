@@ -19,8 +19,12 @@ public class Character : MonoBehaviour
 	{
 		renderer = GetComponent<SpriteRenderer>();
 
-		Texture2D texture = moveList[0].moveData.steps[0].texture;
-		renderer.sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+		//Texture2D texture = moveList[0].moveData.steps[0].texture;
+		//renderer.sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+
+		Sprite sprite = moveList[0].moveData.steps[0].sprite;
+		renderer.sprite = sprite;
+
 	} // delegate inscription
 
 	void Update()
