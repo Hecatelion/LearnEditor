@@ -16,11 +16,8 @@ public class MoveEditor : EditorWindow
 	static readonly Vector2 c_marginVec = new Vector2(c_margin, c_margin);
 	static readonly Vector2 c_stepsButtonsPos = new Vector2(50, 75);
 	static readonly Vector2 c_buttonSize = new Vector2(50, 50);
-	static readonly Rect c_stepTextureRect = new Rect(110, 150, 350, 350);
+	public static readonly Rect c_stepTextureRect = new Rect(110, 150, 350, 350);
 
-	//Texture2D tex;
-	//Texture2D curTex;
-	//Texture2D texCustomAlpha;
 	Texture2D[] stepsTextures;
 	Texture2D toolTex;
 	Sprite curSpr;

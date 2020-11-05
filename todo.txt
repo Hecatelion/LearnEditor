@@ -1,4 +1,2 @@
-- spriteRenderer only can change sprite -> must save sprites instead of texture2D
-
-
-- allow sprite selection back to null 
+- create multiple colliders on 1 frame
+- make all frames run when key pressed !
