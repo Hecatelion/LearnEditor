@@ -8,7 +8,9 @@ public class Step
 	//public Texture2D texture;
 	public Sprite sprite;
 
-	public int duration;
+	public int durationInFrame;
+	public float DurationInSeconds { get => durationInFrame / 60.0f; }
+
 	[HideInInspector] public int damages;
 	public List<Rect> hitboxes;
 

@@ -167,9 +167,9 @@ public class MoveEditor : EditorWindow
 			// ----------------------------------------
 			// duration
 			GUI.Label(new Rect(10, c_stepTextureRect.y, 50, 16), "duration : ");
-			curStep.duration = EditorGUI.IntField(
+			curStep.durationInFrame = EditorGUI.IntField(
 				new Rect(60, c_stepTextureRect.y, 50, 16),
-				curStep.duration);
+				curStep.durationInFrame);
 		}
 
 		if (toolTex)

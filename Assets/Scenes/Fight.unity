@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce4693a785b105429c0aaa8dbc4730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleSprite: {fileID: -1274391016686846377, guid: e6eb5738bc0fc5d4ebe05ffa3040eb48,
+    type: 3}
   moveList:
   - moveData: {fileID: 11400000, guid: a95b03537b921cc459adb4cb1e3489cf, type: 2}
     key: 262
@@ -205,7 +207,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1274391016686846377, guid: e6eb5738bc0fc5d4ebe05ffa3040eb48,
+  m_Sprite: {fileID: -1496528937739148842, guid: e6eb5738bc0fc5d4ebe05ffa3040eb48,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

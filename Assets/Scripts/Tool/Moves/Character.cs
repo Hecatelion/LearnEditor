@@ -11,8 +11,9 @@ struct MoveAndInput
 
 public class Character : MonoBehaviour
 {
+	[SerializeField] Sprite idleSprite;
 	[SerializeField] List<MoveAndInput> moveList;
-	List<BoxCollider> hitboxes = new List<BoxCollider>();
+	List<BoxCollider> hitboxesColliders = new List<BoxCollider>();
 
 	SpriteRenderer spriteRenderer;
 
@@ -20,40 +21,70 @@ public class Character : MonoBehaviour
 	{
 		spriteRenderer = GetComponent<SpriteRenderer>();
 
-		Sprite sprite = moveList[0].moveData.steps[0].sprite;
-		spriteRenderer.sprite = sprite;
-		
-		SetHitboxes();
+		SetCurStepIdle();
 
-	} // delegate inscription
+	}
 
 	void Update()
     {
-		// check if a move input has been pressed
 		foreach (var moveAndInput in moveList)
 		{
 			if (Input.GetKeyDown(moveAndInput.key))
 			{
-				//Use(moveAndInput.moveData);
-				Debug.Log("KeyPressed");
+				StartCoroutine(Use(moveAndInput.moveData));
 				break;
 			}
 		}
-    }
-
-	void Use(Move _move)
-	{
-		//_move
 	}
 
-	void SetHitboxes()
+	IEnumerator Use(Move _move)
 	{
-		BoxCollider newCol = gameObject.AddComponent<BoxCollider>();
+		foreach (Step step in _move.steps)
+		{
+			SetCurStep(step);
+			yield return new WaitForSeconds(step.DurationInSeconds);
+		}
 
-		SetBoxColliderDimensionsFrom(ref newCol, moveList[0].moveData.steps[0].hitboxes[0]);
+		SetCurStepIdle();
+		yield return null;
 	}
 
-	void SetBoxColliderDimensionsFrom(ref BoxCollider _col, Rect _hitbox)
+	void SetCurStep(Step _step)
+	{
+		spriteRenderer.sprite = _step.sprite;
+		SetHitboxes(_step);
+	}
+
+	void SetCurStepIdle()
+	{
+		spriteRenderer.sprite = idleSprite;
+		FreeHitboxesColliders();
+	}
+
+	void SetHitboxes(Step _step)
+	{
+		FreeHitboxesColliders();
+
+		foreach (var box in _step.hitboxes)
+		{
+			BoxCollider newCol = gameObject.AddComponent<BoxCollider>();
+			SetBoxColliderDimensionsFrom(newCol, box);
+
+			hitboxesColliders.Add(newCol);
+		}
+	}
+
+	void FreeHitboxesColliders()
+	{
+		foreach (var col in hitboxesColliders)
+		{
+			Destroy(col);
+		}
+
+		hitboxesColliders.Clear();
+	}
+
+	void SetBoxColliderDimensionsFrom(BoxCollider _col, Rect _hitbox)
 	{
 		Rect editorTexRect = MoveEditor.c_stepTextureRect;
 		Rect sprRect = spriteRenderer.sprite.rect;
